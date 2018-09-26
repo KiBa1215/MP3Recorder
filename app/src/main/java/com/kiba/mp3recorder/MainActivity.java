@@ -67,9 +67,9 @@ public class MainActivity extends AppCompatActivity implements HoldPressListener
     public void onHoldButtonStateChanged(boolean inside) {
         Log.d(TAG, "onHoldButtonStateChanged: inside = " + inside);
         if (inside) {
-            textView.setText("Outside the button");
-        } else {
             textView.setText("Inside the button");
+        } else {
+            textView.setText("Outside the button");
         }
     }
 
